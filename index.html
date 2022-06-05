@@ -6,37 +6,166 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .project tbody{
+            text-align:center;
+        }
+        th, td{
+            padding: 15px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>My name</h1>
-    <p>
-        <em>Style</em> is <strong>This</strong> 
-    </p>
+    <h1><Strong>Shao Yu Lee</Strong></h1>
+    <font size="4">
+        <p>
+            <em>Software developer</em>
+            <br>Web Developer
+        </p>
+    </font>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ducimus 
-        cum, rem corrupti dolorem molestiae dignissimos magnam in eligendi pariatur veniam maiores. 
-        Assumenda corporis ipsum nam dolore excepturi dolor a.</p>
     <hr>
-    <h3>Books and teaching</h3>
-    <ul>
-        <li>This is a first</li>
-        <li>This is a second</li>
-    </ul>
-    <a href="hobbies.html">My Hobbies</a>
+    <h1>Education</h1>
+    <font size="4" face="Courier New">
+        <table>
+            <thead>
+                <tr>
+                    <td>School</td>
+                    <td>Years</td>
+                    <td>GPA</td>
+                    <td>Degree</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>University of California, Irvine</td>
+                    <td>2018-2020</td>
+                    <td>3.34</td>
+                    <td>BS Computer Science</td>
+                </tr>
+                <tr>
+                    <td>Pasadena City College</td>
+                    <td>2015-2018</td>
+                    <td>3.75</td>
+                    <td>
+                        <li style="list-style-type:none;">Engineering And Technology AA</li>
+                        <li style="list-style-type:none;">Mathematics AS-T</li>
+                        <li style="list-style-type:none;">Physics AS-T</li>
+                        <li style="list-style-type:none;">Natural Sciences AA</li>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </font>
+    <hr>
+    <h1>Projects</h1>
+    <font size="4" face="serif">
+        <table class="project">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Language</td>
+                    <td>Period</td>
+                    <td>Location</td>
+                    <td>Details</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Relational Database Management System</td>
+                    <td>C++</td>
+                    <td>2017/9 - 2017/12</td>
+                    <td>PCC</td>
+                    <td style="text-align: left;"> 
+                        <li>Creating a state machine from scratch, storing data in a B+ tree, building a SQL table by double maps</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AI Sudoku</td>
+                    <td>Java</td>
+                    <td>2019/1 - 2019/3</td>
+                    <td>UCI</td>
+                    <td style="text-align: left;">
+                        <li>Completely solving a random sudoku puzzle board efficiently using heuristic-based algorithms</li>
+                        <li>Extra heuristic algorithm for the competition is implementing Peter Norvig's sudoku solver</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Web Crawler: Cache server</td>
+                    <td>Python</td>
+                    <td>2019/9 - 2019/12</td>
+                    <td>UCI</td>
+                    <td style="text-align: left;">
+                        <li>Search the starting web page and store each link into the storage</li>
+                        <li>Recursively download the URLs from the frontier until there are no more unique pages.</li>
+                        <li>List out common words, frequency of the common words, subdomains</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Machine Learning: Classifier the customer behavior</td>
+                    <td>Python</td>
+                    <td>2019/9 - 2019/12</td>
+                    <td>UCI</td>
+                    <td style="text-align: left;">
+                        <ul>
+                            <li>selected the classification models below to train the best output</li>
+                            <li style="padding-left:1em; list-style-type:none;">K-nearest neighbor</li>
+                            <li style="padding-left:1em; list-style-type:none;">linear models</li>
+                            <li style="padding-left:1em; list-style-type:none;">kernel models</li>
+                            <li style="padding-left:1em; list-style-type:none;">random forests</li>
+                            <li style="padding-left:1em; list-style-type:none;">boosted learners</li>
+                            <li style="padding-left:1em; list-style-type:none;">neural network.</li>  
+                            <li>Ensembling one model from another model for better validation data.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Web Crawler</td>
+                    <td>Python</td>
+                    <td>2021/9 - 2021/10</td>
+                    <td>Work</td>
+                    <td style="text-align: left;">
+                        <li>Crawling all of the listing data, images, manifest file</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Simple OS GUI</td>
+                    <td>Java</td>
+                    <td>2019/9 - 2019/12</td>
+                    <td>UCI</td>
+                    <td style="text-align: left;">
+                        <li>Designing a simple operating system capable of doing multiple tasks for printers that support multithreading.</li>
+                        <li>By using the swing library to implement GUI features on the performance.</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Embedded Software</td>
+                    <td>C</td>
+                    <td>2019/9 - 2019/12</td>
+                    <td>UCI</td>
+                    <td style="text-align: left;">
+                        <li>Designing circuits from scratch and implemented with the hardware.</li>
+                        <li>A programmable clock</li>
+                        <li>digital music player</li>
+                        <li>simple volt-meters</li>
+                        <li>and advanced alarms</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Backend DataBase:Spring Boot</td>
+                    <td>Java</td>
+                    <td>Now</td>
+                    <td>Home</td>
+                    <td style="text-align: left;">
+                        <li>learning RestAPI</li>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </font>
     <a href="contact.html">Contact me</a>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="10">
-        <tr>
-            <td>Talk shit</td>
-            <td>❤❤❤</td>
-        </tr>
-        <tr>
-            <td>talk good</td>
-            <td>❤❤❤❤</td>
-        </tr>
-    </table>
 </body>
 
 </html>
