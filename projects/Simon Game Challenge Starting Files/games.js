@@ -12,7 +12,6 @@ $(document).keypress(function(){
     }
 })
 
-
 function nextSequence(){
     level++;
     $("#level-title").html("Level " + level);
