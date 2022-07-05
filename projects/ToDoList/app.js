@@ -4,13 +4,12 @@ const mongoose = require("mongoose");
 const _ = require("lodash");
 
 const app = express();
-const port = 3000;
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin:V6EgTghLqbwCEqYW@cluster0.s9cuv.mongodb.net/todolistDB", {useNewUrlParser: true});
 
 const itemSchema = {
     name: String
@@ -141,6 +140,7 @@ app.get("/:customName", function(req, res){
 //         res.redirect("/work");
 //     }
 // })
-app.listen(port, function(){
-    console.log("listening to " + port);
-});
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log("listen to port: " + port));
